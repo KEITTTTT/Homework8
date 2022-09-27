@@ -26,13 +26,13 @@ public class Main {
         // Задача 2
         int min = 201000;
         for (int i = 0; i < arr.length && arr[i] < min; i++) {
-            if (i < min) {
+            if (arr [i] < min) {
                 min = arr[i];
             }
         }
         int max = 0;
         for (int a = 0; a < arr.length && arr[a] > max; a++) {
-            if (a > max) {
+            if (arr [a] > max) {
                 max = arr[a];
             }
         }
