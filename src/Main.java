@@ -26,11 +26,15 @@ public class Main {
         // Задача 2
         int min = 201000;
         for (int i = 0; i < arr.length && arr[i] < min; i++) {
-            min = arr[i];
+            if (i < min) {
+                min = arr[i];
+            }
         }
         int max = 0;
         for (int a = 0; a < arr.length && arr[a] > max; a++) {
-            max = arr[a];
+            if (a > max) {
+                max = arr[a];
+            }
         }
         System.out.println("Минимальная сумма трат за день составила " + min + " рублей. " + "Максимальная сумма трат за день составила " + max + "рублей ");
     }
@@ -44,21 +48,21 @@ public class Main {
                 System.out.println(arr[i] + " ");
             }
         }
-            double average = 0;
-            for (int i = 0; i < arr.length; i++) {
-                average += arr[i] / 30;
-            }
-            System.out.println("Средняя сумма трат за месяц составила " + average + "рублей ");
+        double average = 0;
+        for (int i = 0; i < arr.length; i++) {
+            average += arr[i] / 30;
         }
-
-        public static void task3 () {
-            // Задаие 4
-            char[] reverseFullName = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
-            for (int i = reverseFullName.length - 1; i >= 0; i = i - 1) {
-                System.out.print(reverseFullName[i] + " ");
-            }
-
-        }
+        System.out.println("Средняя сумма трат за месяц составила " + average + "рублей ");
     }
+
+    public static void task3() {
+        // Задаие 4
+        char[] reverseFullName = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+        for (int i = reverseFullName.length - 1; i >= 0; i = i - 1) {
+            System.out.print(reverseFullName[i] + " ");
+        }
+
+    }
+}
 
 
